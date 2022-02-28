@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>A rather simple contact form</title>
+
+        <link rel="stylesheet" href="./libs/bootstrap.css" />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div id="form-header">
+                            <h2>Mete tus datos</h2>
+                            <h4>
+                                Tranquilo, no los vamos a guardar. No sabemos :)
+                            </h4>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Jorge"
+                                />
+                                <label for="name">Pon tu nombre</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="surname"
+                                    placeholder="Gonzalez"
+                                />
+                                <label for="surname">Pon tu apellido</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="age"
+                                    placeholder="20"
+                                />
+                                <label for="age">Pon tu edad</label>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="save" class="btn btn-primary">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="./libs/jquery.js"></script>
+    <script src="./libs/bootstrap.js"></script>
+    <script src="./index.js"></script>
+</html>
