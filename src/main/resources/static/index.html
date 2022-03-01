@@ -13,7 +13,56 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <form>
+                    <div class="content hidden" id="response">
+                        <div class="form-header">
+                            <h2>Ey!</h2>
+                            <h4>
+                                Aquí tienes lo que hemos recibido del servidor
+                            </h4>
+                            <div class="form-group">
+                                <div class="form-floating mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="name-read"
+                                        readonly
+                                        placeholder="Jorge"
+                                    />
+                                    <label for="name">Tu nombre</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-floating mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="surname-read"
+                                        readonly
+                                        placeholder="Gonzalez"
+                                    />
+                                    <label for="surname">Tu apellido</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-floating mb-3">
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="age-read"
+                                        readonly
+                                        placeholder="20"
+                                    />
+                                    <label for="age">Tu edad</label>
+                                </div>
+                            </div>
+                            <div>
+                                <button id="go-back" class="btn btn-primary">
+                                    Volver
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="content" id="form">
                         <div id="form-header">
                             <h2>Mete tus datos</h2>
                             <h4>
@@ -53,12 +102,35 @@
                                 <label for="age">Pon tu edad</label>
                             </div>
                         </div>
+                        <div id="alerts">
+                            <div
+                                id="alert-error"
+                                class="alert alert-danger"
+                                role="alert"
+                            >
+                                A simple danger alert—check it out!
+                            </div>
+                            <div
+                                id="alert-success"
+                                class="alert alert-success"
+                                role="alert"
+                            >
+                                A simple danger alert—check it out!
+                            </div>
+                        </div>
                         <div>
                             <button id="save" class="btn btn-primary">
                                 Guardar
                             </button>
                         </div>
                     </form>
+                    <div class="note">
+                        <p class="text-muted">
+                            Cuando subas tus datos, modificaremos en el servidor
+                            tu apellido por "García" para mostrar que podemos
+                            alterar tus datos recibidos en el servidor.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
